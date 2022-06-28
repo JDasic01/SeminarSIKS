@@ -97,12 +97,11 @@ def KeyExchangeX25519():
     if(shared_key_server == shared_key_client):
         return True
 
-kljuc_klijent = b'nMrhMgIiAsMMEMfuPudvP4_LfA6U85NOGdAJZBdGN1Q='         
+kljuc_klijent = b'9vpaiUkKUDXO-sFsXk_La7eo0u1KHFcdoxJDhcRhwMU='         
 kljuc_posluzitelj =b'zjeM756A0Z69DE5jna14ff575bh2DP4-5pyFMTRXB94='     
 fernet_kljuc_klijent = Fernet(kljuc_klijent)
 fernet_kljuc_posluzitelj = Fernet(kljuc_posluzitelj)
 
-print(Fernet.generate_key())
 
 # Cha Cha poly
 import os
